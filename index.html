@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Odin Sign Up Form</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="container">
+    <div id="sidebar">
+      <div id="logo-wrapper">
+        <img id="odin-logo" src="Images/odin-lined.png" alt="Odin logo">
+        <span>ODIN</span>
+      </div>
+      <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
+    </div>
+    <div id="main">
+      <div id="call-to-action">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <span class="italics">now</span> to get started.</p>
+        <p>You <span class="italics">know</span> you want to.</p>
+      </div>
+      <div id="sign-up">
+        <p>Let's do this!</p>
+        <form id="sign-up-form">
+          <label>
+            FIRST NAME
+            <input
+              type="text"
+              name="first_name"
+              placeholder="Thor"
+              required
+            >
+          </label>
+          <label>
+            LAST NAME
+            <input
+              type="text"
+              name="last_name"
+              placeholder="Odinsson"
+              required
+            >
+          </label>
+          <label>
+            EMAIL
+            <input
+              type="email"
+              name="email"
+              placeholder="Thor@Asgard.com"
+              required
+            >
+            <span class="error-message">
+              * Invalid email
+            </span>
+          </label>
+          <label>
+            PHONE NUMBER
+            <input
+              type="text"
+              name="phone_number"
+              placeholder="123-456-789"
+              required
+            >
+          </label>
+          <label>
+            PASSWORD
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              required
+            >
+            <span class="error-message">
+              * Passwords do not match
+            </span>
+          </label>
+          <label>
+            CONFIRM PASSWORD
+            <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            placeholder="Password"
+            required
+            >
+            <span class="error-message">
+              * Passwords do not match
+            </span>
+          </label>
+        </form>
+      </div>
+      <div id="log-in">
+        <button
+          type="submit"
+          form="sign-up-form"
+        >
+          Create Account
+        </button>
+        <p>Already have an account? <a href=".">Log in</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

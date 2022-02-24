@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url(Fonts/Norse-Bold.otf) format("opentype");
+}
+
+:root {
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+#sidebar {
+  background-image: url("Images/plant.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 535px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#sidebar p {
+  color: white;
+  margin-top: auto;
+  text-align: center;
+  font-size: 12px;
+}
+
+#sidebar a:visited {
+  color: white;
+}
+
+#logo-wrapper {
+  margin-top: 220px;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: "Norse Bold";
+  color: white;
+  font-size: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#odin-logo {
+  height: 130px;
+}
+
+#main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f9fafb;
+}
+
+.italics {
+  font-style: italic;
+}
+
+#call-to-action, #log-in, #sign-up {
+  padding-left: 47px;
+}
+
+#call-to-action p, #sign-up p {
+  font-weight: bold;
+}
+
+#sign-up {
+  background-color: white;
+  height: calc(100vh / calc(1024 / 300));
+  -webkit-box-shadow: 0px 8px 5px -5px rgba(128, 128, 128, 0.5);
+          box-shadow: 0px 8px 5px -5px rgba(128, 128, 128, 0.5);
+  margin-bottom: 10px;
+}
+
+#sign-up form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (330px)[2];
+      grid-template-columns: repeat(2, 330px);
+  -ms-grid-rows: (60px)[3];
+      grid-template-rows: repeat(3, 60px);
+}
+
+#sign-up form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: .5rem;
+  letter-spacing: .1rem;
+}
+
+#sign-up form label input {
+  width: 260px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #E5E7EB;
+  padding-left: 10px;
+}
+
+#sign-up form label input:not(:valid):not(:placeholder-shown) {
+  border-color: red;
+}
+
+#sign-up form label input:not(:valid):not(:placeholder-shown) ~ .error-message {
+  display: block;
+}
+
+#sign-up form label input:focus {
+  outline: 0;
+  border-color: blue;
+  -webkit-box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
+          box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.5);
+}
+
+#sign-up form label .error-message {
+  color: red;
+  letter-spacing: normal;
+  display: none;
+}
+
+#call-to-action {
+  height: calc(100vh / calc(1024 / 370));
+  padding-bottom: 60px;
+  padding-right: 87px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#log-in {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-top: 35px;
+}
+
+#log-in button {
+  background-color: #596D48;
+  border: 0px;
+  border-radius: 5px;
+  width: 235px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#log-in button:hover {
+  cursor: pointer;
+  color: gainsboro;
+}
+
+#log-in a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
